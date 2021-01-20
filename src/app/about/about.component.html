@@ -1,0 +1,82 @@
+<div class="container text-center staff">
+  <h1 class="jumbotron-heading text-left">ABOUT</h1>
+  <p class="blockquote-footer text-left"><cite>Who we are, what we do and why</cite></p>
+  <div class="row">
+    <div class="text-justify" id="about">
+      We strongly believe in the social power that games as a medium have. That’s why we’re making it our mission to boost social gaming and provide people with all kinds of ways to connect through games.
+      <br /><br />
+    </div>
+  </div>
+  <br/>
+  <div class="row ourvision">
+    <div class="text-justify">     
+      <ul id="vision">
+        <li>
+          <h2>EVENTS</h2>
+          <ul id="events">
+            <li>
+              <h3>OFFLINE</h3>
+              Gaming events can take a lot of forms. There’s LAN parties, E-sports events, conventions, workshops, Gamejams, specialized meetups and more. All these events provide people with the opportunity to socialize, meet other like minded people and sit down to enjoy some games together.
+    
+              As the Pipeline we try our best to organize, support and attend as many of these events as possible in and around Belgium in order to bring people closer together in real life.             
+            </li>
+            <li>
+              <h3>ONLINE</h3>
+              Ever since the rise of the internet, online communication and interaction has started taking over our everyday lives. We’re in constant contact with not only close friends, but also total strangers from all over the world. And games also take advantage of this evolution by the means of online gaming, MMOs and more. 
+              That’s why as the Pipeline, we try to organize online game sessions, host servers where people can enjoy a special game together 
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2>STREAMING</h2>
+          Streaming has become one of the most social ways of sharing your gaming experience with others. This popular medium has brought gamers of all ages together, provided a place for content creators to express themselves and has given people a totally new and interactive way of watching and experiencing content. 
+
+          As the Pipeline we try to help and support the Belgian streamer scene by boosting their reach, offering them special opportunities through sponsors or partners and organizing specialized streaming events. Of course we also have our own Twitch channel on which you can find streams of our and partnered events, social gaming content and hosted Belgian streamers.
+          
+        </li>
+        <li>
+          <h2>COMMUNITY</h2>
+          This might sound sappy, but being part of a community is like being part of one big family. One that isn’t connected through blood, but instead through a shared interest in games and gaming.
+
+In a community you can share a feeling of belonging by hanging out with new and old friends, talk about things, do things together and more. When you’re part of a community, you can always know there’ll be someone there for you when you need it!
+
+With the Pipeline we want to create that community feeling and share it with everyone! 
+        </li>
+      </ul>
+    </div>
+  </div>
+  <hr class="my-5">
+  <h1 class="jumbotron-heading text-left">THE STAFF</h1>
+  <p class="blockquote-footer text-left"><cite>They keep it all together</cite></p>
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-3 mt-5" *ngFor="let staffMember of staffMembers">
+      <img src="{{staffMember.imageUrl}}" height="200px" width="200px" class="rounded-circle "
+        alt="{{staffMember.name}}">
+      <h3 class="mt-3">{{staffMember.name | uppercase}}</h3>
+      <p>{{staffMember.role}}</p>
+      <p>
+        <a [href]="staffMember.facebook" target="_blank" title="Facebook" [hidden]="!staffMember.facebook">
+          <fa-icon [icon]="['fab', 'facebook']"></fa-icon>
+        </a>
+        <a [href]="staffMember.twitter" target="_blank" title="Twitter" [hidden]="!staffMember.twitter">
+          <fa-icon [icon]="['fab', 'twitter']"></fa-icon>
+        </a>
+        <a [href]="staffMember.twitch" target="_blank" title="Twitch" [hidden]="!staffMember.twitch">
+          <fa-icon [icon]="['fab', 'twitch']"></fa-icon>
+        </a>
+        <a [href]="staffMember.instagram" target="_blank" title="Instagram" [hidden]="!staffMember.instagram">
+          <fa-icon [icon]="['fab', 'instagram']"></fa-icon>
+        </a>
+        <a [href]="staffMember.linkedin" target="_blank" title="Instagram" [hidden]="!staffMember.linkedin">
+          <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
+        </a>
+        <a [href]="staffMember.website" target="_blank" title="Website" [hidden]="!staffMember.website">
+          <fa-icon [icon]="['fas', 'globe']"></fa-icon>
+        </a>
+        <a href="mailto:{{staffMember.email}}" target="_blank" title="E-mail" [hidden]="!staffMember.email">
+            <fa-icon [icon]="['fas', 'envelope']"></fa-icon>
+          </a>
+      </p>
+    </div>
+  </div>
+</div>

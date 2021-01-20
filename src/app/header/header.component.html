@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-md">
+  <div id="logo-section">
+      <a routerLink="/" class="">
+        <img width="120" alt="Pipeline Logo" id="PipelineLogo" src="assets/images/logo.png">
+      </a>
+  </div>
+  <button (click)="isCollapsed = !isCollapsed" class="navbar-toggler" [attr.aria-expanded]="!isCollapsed"
+    aria-controls="collapseBasic" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <fa-icon [icon]="['fas', 'bars']"></fa-icon>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse" [collapse]="isCollapsed" [isAnimated]="true">
+    <ul class="navbar-nav mr-auto" >
+      <li class="nav-item" routerLinkActive="active"  [routerLinkActiveOptions]="{exact: true}" >
+        <a class="nav-link" routerLink="/"  >
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" >
+        <a class="nav-link" routerLink="/about" >
+          <span>About</span>
+        </a>
+      </li>
+      <li class="nav-item" routerLinkActive="active"  [routerLinkActiveOptions]="{exact: true}" >
+        <a class="nav-link" routerLink="/calendar"  >
+          <span>Calendar</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,30 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import './colors';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto Condensed','Roboto', Arial;
+  background: url('../assets/images/BGlight.png');
+  background-size: cover;
+  color: $black;
+  background-attachment: fixed;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  display: none;
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary-light;
+};

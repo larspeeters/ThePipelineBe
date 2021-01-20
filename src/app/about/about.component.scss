@@ -1,0 +1,44 @@
+@import './src/sass/_colors';
+h1, h2{
+  font-weight: bolder;
+}
+.staff {
+  margin-top: 8%;
+  fa-icon {
+    padding: 0 5px;
+    font-size: 1.2rem;
+    color: $black;
+    &:hover {
+      color: $secondary-dark;
+    }
+  }
+}
+
+#vision li{
+  list-style-type: none;
+  text-align: justify;
+  margin-bottom: 3%;
+}
+
+#vision li H3{
+  font-weight: bolder;
+  font-style: italic;
+}
+
+// mobile
+@media only screen and (max-width: 760px) {
+  div#about {
+    padding: 4%;
+}
+  .staff {
+    margin-top: 20% !important; 
+  }
+
+  #vision{
+    padding: 4%;
+  }
+
+  #events{
+    padding:0;
+  }
+}

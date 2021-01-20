@@ -1,0 +1,27 @@
+.pvs {
+  .logoframe-wrapper {
+    position: relative;
+  }
+
+  .pvs-logo {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    z-index: -1;
+  }
+
+  .frame {
+    z-index: 1;
+  }
+
+  a {
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+
+  p.name {
+    color: black;
+  }
+}

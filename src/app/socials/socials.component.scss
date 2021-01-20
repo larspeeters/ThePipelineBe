@@ -1,0 +1,15 @@
+@import './src/sass/_colors';
+
+.socials {
+  background-color: $secondary-light;
+
+  fa-icon {
+    padding: 10px;
+    font-size: 4vw;
+    color: $black;
+
+    &:hover {
+      color: $secondary-dark;
+    }
+  }
+}

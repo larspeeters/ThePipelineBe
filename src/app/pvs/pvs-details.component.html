@@ -1,0 +1,17 @@
+<div class="container text-center my-5">
+  <h1 class="jumbotron-heading">{{pvser.name | uppercase}}</h1>
+  <footer class="blockquote-footer"><cite>twitch.tv/{{pvser.name}}</cite></footer>
+  <div class="row mt-5">
+    <div class="col-md-12">
+      <img [src]="pvser.twitchImageUrl" height="200px" width="200px" class="rounded-circle " alt="{{pvser.name}}" />
+      <a href="https://twitch.tv/{{pvser.name}}" target="_blank">
+        <h3 class="my-3">GO TO CHANNEL</h3>
+      </a>
+      <ul style="list-style:none;padding-left:0">
+        <li>{{pvser.broadcasterType | titlecase}}</li>
+        <li>{{pvser.followerCount}} followers</li>
+        <li>{{pvser.viewCount}} total views</li>
+      </ul>
+    </div>
+
+  </div>
